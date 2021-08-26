@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".FormActivity"
+    android:background="@drawable/main_gradient">
+
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"/>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description"/>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_urgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="urgent"
+            android:layout_marginRight="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="important"
+            android:layout_marginRight="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="common"
+            android:layout_marginRight="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="save"
+        android:background="@drawable/round_button_corners"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Deadline Time"
+        android:onClick="onClickSetDeadline"
+        android:background="@drawable/round_button_corners"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+</LinearLayout>
